@@ -2,7 +2,7 @@
 
 🛡️ A Python tool to scan domains for backup files, unreferenced files, and potentially sensitive content.
 
-![Logo](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/th5xamgrr6se0x5ro4g6.png)
+![Logo](https://github.com/dineshpathro90/Backup-File-Finder/blob/main/Logo.png)
 
 ## ✨ Features
 
