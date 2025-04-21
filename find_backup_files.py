@@ -276,8 +276,12 @@ def main(domain, output_file, status_codes_filter, concurrency, json_output, sub
     all_urls = []
     for dom in domains:
         schemes = ["http", "https"]
-        for file_path in potential_files:
-            all_urls.append(f"{scheme}://{dom}{file_path}")
+        for scheme in schemes: # Iterate through schemes
+            for file_path in potential_files:
+                # Ensure file_path starts with '/' if it doesn't already
+                if not file_path.startswith('/'):
+                    file_path = '/' + file_path
+                all_urls.append(f"{scheme}://{dom}{file_path}")
 
     found_files = []
 
